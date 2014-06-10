@@ -49,7 +49,7 @@ Add following lines in yout app/Config/bootstrap.php file
 
 # Usage
 
-	To send and retrieve data from an endpoint. here is an example
+	To send and retrieve data from an endpoint. here is an example:
 
 ```php
 

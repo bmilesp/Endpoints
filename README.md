@@ -46,7 +46,10 @@ Add following lines in yout app/Config/bootstrap.php file
 
 ```
 
-	Finally, to send and retrieve data from an endpoint. here is an example
+
+# Usage
+
+	To send and retrieve data from an endpoint. here is an example
 
 ```php
 
@@ -57,5 +60,3 @@ Add following lines in yout app/Config/bootstrap.php file
 	}
 
 ```
-
-# Usage

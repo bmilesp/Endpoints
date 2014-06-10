@@ -1,0 +1,15 @@
+{
+    "name": "bmilesp/endpoints",
+    "description": "Simple CakePHP API endpoints plugin for simplicity in connecting to API endpoints",
+    "authors": [
+        {
+            "name": "bmilesp",
+            "email": "bmilesp@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "type": "cakephp-plugin",
+    "require": {
+        "composer/installers": "~1.0"
+    }
+}

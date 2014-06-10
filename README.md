@@ -6,6 +6,7 @@ Simple CakePHP API endpoints plugin for simplicity in connecting to API endpoint
 
 # Requirements
 
+CakePHP => 2.1 
 
 # Installation
 

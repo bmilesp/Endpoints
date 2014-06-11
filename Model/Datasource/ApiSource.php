@@ -1,4 +1,4 @@
 <?php
 
-App::uses('DataSource', 'Model/Datasource');
+App::uses('Datasource', 'Model/Datasource');
 class ApiSource extends Datasource {}

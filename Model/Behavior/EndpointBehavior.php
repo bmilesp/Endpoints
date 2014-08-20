@@ -17,10 +17,10 @@ class EndpointBehavior extends ModelBehavior {
 
 	public function callEndpoint(&$Model, $path= null, $type = 'POST', $data = array() ){
 		$fullPath = $this->http.$this->endpointHost . $path;
+		
 		//$request = new CakeRequest($fullPath);
 		$http = new HttpSocket();
 		if($type == 'POST'){
-			
 			$request = $http->post($fullPath,$data);
 		}
 		return $request;

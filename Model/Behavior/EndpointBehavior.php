@@ -22,6 +22,8 @@ class EndpointBehavior extends ModelBehavior {
 		$http = new HttpSocket();
 		if($type == 'POST'){
 			$request = $http->post($fullPath,$data);
+		}else{
+			$request = $http->get($fullPath,$data);
 		}
 		return $request;
 	}

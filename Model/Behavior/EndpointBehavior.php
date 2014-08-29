@@ -12,18 +12,17 @@ class EndpointBehavior extends ModelBehavior {
 		$this->endpointHost = $db->config['host'];
 		$this->http = !empty( $db->config['https'])? 'https://' : 'http://';
 		parent::setup($Model, $config);
-
 	}
 
-	public function callEndpoint(&$Model, $path= null, $type = 'POST', $data = array() ){
+	public function callEndpoint(&$Model, $path= null, $type = 'POST', $data = array(), $options = array()){
 		$fullPath = $this->http.$this->endpointHost . $path;
 		
 		//$request = new CakeRequest($fullPath);
 		$http = new HttpSocket();
 		if($type == 'POST'){
-			$request = $http->post($fullPath,$data);
+			$request = $http->post($fullPath,$data,$options);
 		}else{
-			$request = $http->get($fullPath,$data);
+			$request = $http->get($fullPath,$data,$options);
 		}
 		return $request;
 	}
